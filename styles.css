@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background-color: #212121;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.text-container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+.text-line {
+  text-shadow: 
+  -1px -1px 0 rgb(62, 61, 61),  
+   1px -1px 0 rgb(62, 61, 61),
+  -1px  1px 0 rgb(62, 61, 61),
+   1px  1px 0 rgb(62, 61, 61);
+  font-size: 7rem; /* Increased text size */
+  margin: 0;
+  line-height:0.9; /* Reduced gap between lines */
+  transition: color 0.5s;
+}
+
+
+
+.hero-image {
+  width: 350px;
+  height: 200px;
+  opacity: 0.5;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+}
+
+.hero-image:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 10; /* Bring the hovered image above the text */
+}
+
+.image-border {
+  border: 2px solid white;
+  
+}
+
+.hide-image {
+ 
+  opacity: 0;
+}
+
+/* Custom positioning for images */
+#image1 {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+#image2 {
+  position: absolute;
+  top: 10%;
+  left: 60%; /* Adjusted to be slightly below image1 */
+}
+
+#image3 {
+  position: absolute;
+  top: 60%; /* Below image1 */
+  left: 20%; /* Slightly to the right of image1 */
+}
+
+#image4 {
+  position: absolute;
+  bottom: 30%; /* Bottom right corner */
+  left: 70%;
+}   
